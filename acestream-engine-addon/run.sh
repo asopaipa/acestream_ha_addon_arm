@@ -18,4 +18,4 @@ EOF
 
 # Inicia el engine.
 # Ajusta el comando según sea necesario para que use el puerto configurado.
-exec /acestreamengine --port ${ACE_PORT}
+exec /acestreamengine --port ${ACE_PORT} ${ACE_CONFIG_OPTION}
