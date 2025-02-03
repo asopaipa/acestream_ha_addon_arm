@@ -8,9 +8,9 @@ arch:
 startup: application
 boot: auto
 options:
-  ACE_PORT: 6878
+  ACE_CONFIG_OPTION: "- ALLOW_REMOTE_ACCESS=yes"
 schema:
-  ACE_PORT: int
+  ACE_CONFIG_OPTION: str
 ports:
   "6878/tcp": 6878
 image: futebas/acestream-engine-arm
