@@ -8,10 +8,9 @@ arch:
 startup: application
 boot: auto
 options:
-  acestream_port: 6878
+  ACE_PORT: 6878
 schema:
-  acestream_port: int
+  ACE_PORT: int
 ports:
-  "6878/tcp": [acestream_port]
-webui: "http://[HOST]:[PORT:6878]"
+  "6878/tcp": [ACE_PORT]
 image: futebas/acestream-engine-arm
