@@ -9,13 +9,9 @@ startup: application
 boot: auto
 options:
   acestream_port: 6878
-  shared_memory: /dev/shm
-  vlc_mode: local
 schema:
   acestream_port: int
-  shared_memory: str
-  vlc_mode: "list(local|docker)"
 ports:
-  "6878/tcp": 6878
+  "6878/tcp": [acestream_port]
 webui: "http://[HOST]:[PORT:6878]"
 image: futebas/acestream-engine-arm
