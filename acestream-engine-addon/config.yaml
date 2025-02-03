@@ -5,6 +5,9 @@ description: Add-on para ejecutar Acestream Engine basado en futebas/acestream-e
 startup: services
 boot: auto
 host_network: false
+arch:
+  - aarch64
+  - armv7
 options:
   ACE_CONFIG_OPTION: "- ALLOW_REMOTE_ACCESS=yes"
   ACE_PORT: '6878'
