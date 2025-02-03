@@ -1,20 +1,22 @@
-name: Acestream Engine
-version: 1.0
-slug: acestream_engine
-description: Add-on para ejecutar Acestream Engine basado en futebas/acestream-engine-arm
-url: https://github.com/asopaipa/acestream_ha_addon_arm
-init: false
+name: AceStream HA Addon ARM
+slug: acestream_engine_addon
+version: 1.0.0
+description: Add-on para AceStream Engine en ARM
 arch:
-  - aarch64
+  - amd64
   - armv7
   - armv8
+startup: application
+boot: auto
 options:
-  ACE_CONFIG_OPTION: "- ALLOW_REMOTE_ACCESS=yes"
-  ACE_PORT: '6878'
+  acestream_port: 6878
+  shared_memory: /dev/shm
+  vlc_mode: local
 schema:
-  ACE_CONFIG_OPTION: str
-  ACE_PORT: int
+  acestream_port: int
+  shared_memory: str
+  vlc_mode: "list(local|docker)"
 ports:
-  6878/tcp: "[ACE_PORT]"
-ports_description:
-  6878/tcp: Acestream port
+  "6878/tcp": 6878
+webui: "http://[HOST]:[PORT:6878]"
+image: futebas/acestream-engine-arm
