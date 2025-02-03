@@ -12,5 +12,5 @@ options:
 schema:
   ACE_PORT: int
 ports:
-  "6878/tcp": [ACE_PORT]
+  "6878/tcp": 6878
 image: futebas/acestream-engine-arm
