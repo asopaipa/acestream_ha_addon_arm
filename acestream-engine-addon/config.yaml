@@ -3,9 +3,8 @@ slug: acestream_engine_addon
 version: 1.0.0
 description: Add-on para AceStream Engine en ARM
 arch:
-  - amd64
   - armv7
-  - armv8
+  - aarch64
 startup: application
 boot: auto
 options:
