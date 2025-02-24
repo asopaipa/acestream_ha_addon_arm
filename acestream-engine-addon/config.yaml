@@ -1,6 +1,6 @@
 name: AceStream HA Addon ARM
 slug: acestream_engine_addon
-version: 3.2.7.6
+version: 3.2.7.7
 description: Add-on para AceStream Engine en ARM
 arch:
   - armv7
