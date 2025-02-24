@@ -1,6 +1,5 @@
 # Usa la imagen original como base
 FROM futebas/acestream-engine-arm
-COPY main.py /acestream/main.py' > Dockerfile
 
 # Copia el script de arranque en la raíz del contenedor
 COPY run.sh /run.sh
