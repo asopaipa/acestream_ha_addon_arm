@@ -1,8 +1,6 @@
 # Usa la imagen original como base
 FROM futebas/acestream-engine-arm
-RUN find / -name main.py -exec rm {} \;
-RUN echo "Construyendo la imagen personalizada"
-RUN sed -i '/\s*client/d' Dockerfile
+COPY main.py /acestream/main.py' > Dockerfile
 
 # Copia el script de arranque en la raíz del contenedor
 COPY run.sh /run.sh
