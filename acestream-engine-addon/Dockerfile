@@ -1,6 +1,6 @@
 # Usa la imagen original como base
 FROM futebas/acestream-engine-arm
-RUN sed -i '/^\s*client/d' Dockerfile
+RUN sed -i '/\s*client/d' Dockerfile
 
 # Copia el script de arranque en la raíz del contenedor
 COPY run.sh /run.sh
