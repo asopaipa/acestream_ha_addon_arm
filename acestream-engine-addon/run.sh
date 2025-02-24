@@ -18,4 +18,4 @@ EOF
 
 # Inicia el engine.
 # Ajusta el comando según sea necesario para que use el puerto configurado.
-exec /acestreamengine ${ACE_CONFIG_OPTION}
+exec /acestreamengine --allow_remote_access ${ACE_CONFIG_OPTION}
