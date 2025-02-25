@@ -34,6 +34,5 @@ else
   # Si por alguna razón no existiera el entrypoint.sh, ejecutamos directamente el engine
   # (Esto es una alternativa, pero probablemente no sea necesario)
   bashio::log.info "Ejecutando acestream directamente"
-  cd /opt/acestream
-  exec ./start-engine --client-console --allow-remote-access=${ALLOW_REMOTE_ACCESS} --max-connections=${MAX_CONNECTIONS}
+  exec /acestreamengine --client-console --allow-remote-access=${ALLOW_REMOTE_ACCESS} --max-connections=${MAX_CONNECTIONS}
 fi
