@@ -4,8 +4,8 @@ FROM ${BUILD_FROM}
 #ADD alpine-minirootfs-3.21.0-armv7.tar.gz / # buildkit
 #ADD alpine-minirootfs-3.21.0-aarch64.tar.gz / # buildkit
 CMD ["/bin/sh"]
-COPY /acestream /acestream # buildkit
-COPY /system /system # buildkit
+#COPY /acestream /acestream # buildkit
+#COPY /system /system # buildkit
 ENV ACESTREAM_HOME=/acestream
 ENV ANDROID_ROOT=/system
 ENV ANDROID_DATA=/data
