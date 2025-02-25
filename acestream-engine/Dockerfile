@@ -1,5 +1,4 @@
-ARG BUILD_FROM=futebas/acestream-engine-arm
-FROM ${BUILD_FROM}
+FROM futebas/acestream-engine-arm
 
 #ADD alpine-minirootfs-3.21.0-armv7.tar.gz / # buildkit
 #ADD alpine-minirootfs-3.21.0-aarch64.tar.gz / # buildkit
