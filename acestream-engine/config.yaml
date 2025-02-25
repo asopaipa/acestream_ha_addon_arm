@@ -1,6 +1,6 @@
 name: "AceStream Engine ARM"
 description: "AceStream Engine para dispositivos ARM en Home Assistant"
-version: "1.0.11"
+version: "1.0.12"
 slug: "acestream_engine_arm"
 init: false
 arch:
