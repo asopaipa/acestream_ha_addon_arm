@@ -14,7 +14,7 @@ ENV PYTHONPATH=/acestream/python/lib/stdlib:/acestream/python/lib/modules:/acest
 ENV LD_LIBRARY_PATH=/system/lib64:/system/lib:/acestream/python/lib
 ENV TEMP=/tmp
 ENV PATH=/acestream/python/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-ADD main.py dnsproxyd.py /acestream # buildkit
+#ADD main.py dnsproxyd.py /acestream # buildkit
 WORKDIR /acestream
 #CMD ["python" "main.py" "--client-console" "--live-cache-type" "memory" "--live-mem-cache-size" "104857600" "--disable-sentry" "--log-stdout"]
 
