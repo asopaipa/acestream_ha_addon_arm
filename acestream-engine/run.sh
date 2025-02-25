@@ -31,4 +31,4 @@ bashio::log.info "Ejecutando main.py con los siguientes parámetros:"
 bashio::log.info "python main.py $COMMAND_ARGS"
 
 # Ejecutar el comando
-exec /acestream/python/python /acestream/main.py $COMMAND_ARGS
+exec /acestream/python /acestream/main.py $COMMAND_ARGS
