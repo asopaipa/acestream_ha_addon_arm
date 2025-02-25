@@ -31,4 +31,5 @@ bashio::log.info "Ejecutando main.py con los siguientes parámetros:"
 bashio::log.info "python main.py $COMMAND_ARGS"
 
 # Ejecutar el comando
-exec /acestream/python/bin/python main.py --client-console --live-cache-type memory --live-mem-cache-size 104857600 --disable-sentry --log-stdout $COMMAND_ARGS
+cd /acestream
+exec /acestream/python/bin/python ./main.py --client-console --live-cache-type memory --live-mem-cache-size 104857600 --disable-sentry --log-stdout $COMMAND_ARGS
