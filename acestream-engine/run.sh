@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bash
+#!/bin/sh
 
 
 # Ejecutar el comando
