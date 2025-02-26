@@ -13,9 +13,5 @@ ports:
   62062/tcp: 62062
 options:
   ALLOW_REMOTE_ACCESS: "yes"
-  PRODUCT_KEY: ""
-  MAX_CONNECTIONS: "500"
 schema:
   ALLOW_REMOTE_ACCESS: "str"
-  PRODUCT_KEY: "str?"
-  MAX_CONNECTIONS: "str"
