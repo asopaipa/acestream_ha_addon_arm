@@ -1,4 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/with-contenv bashio
+
+set -e
+
+# https://github.com/hassio-addons/bashio
 
 ALLOW_REMOTE_ACCESS=$(bashio::config 'ALLOW_REMOTE_ACCESS')
 PRODUCT_KEY=$(bashio::config 'PRODUCT_KEY')
