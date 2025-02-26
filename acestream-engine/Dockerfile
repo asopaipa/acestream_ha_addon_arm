@@ -1,4 +1,5 @@
 FROM futebas/acestream-engine-arm:3.2.7.6
+RUN apk add --no-cache bash
 
 #ADD alpine-minirootfs-3.21.0-armv7.tar.gz / # buildkit
 #ADD alpine-minirootfs-3.21.0-aarch64.tar.gz / # buildkit
